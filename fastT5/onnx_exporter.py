@@ -173,6 +173,7 @@ def generate_onnx_representation(pretrained_version=None, model=None, output_pat
             input_names=decoder_input_names,
             output_names=decoder_output_names,
             dynamic_axes=dyn_axis_params,
+            use_external_data_format=True,
         )
         bar.next()
 
